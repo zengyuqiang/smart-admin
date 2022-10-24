@@ -22,4 +22,5 @@ target/
 ### front ###
 **/dist
 **/node_modules
+**/.vscode
 
