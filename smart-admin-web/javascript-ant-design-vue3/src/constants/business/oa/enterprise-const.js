@@ -5,7 +5,7 @@
  * @Date:      2022-09-03 22:07:27
  * @Wechat:    zhuda1024
  * @Email:     lab1024@163.com
- * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022
+ * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012
  */
 
 export const ENTERPRISE_TYPE_ENUM = {

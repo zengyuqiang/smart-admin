@@ -5,7 +5,7 @@
  * @Date:      2022-09-06 20:50:10
  * @Wechat:    zhuda1024
  * @Email:     lab1024@163.com
- * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022
+ * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012
  */
 
 import dayjs from 'dayjs';
@@ -49,7 +49,7 @@ function setWatermark(id, str) {
   //设置文本内容的当前对齐方式
   cans.textAlign = 'left';
   //设置在绘制文本时使用的当前文本基线
-  cans.textBaseline = 'Middle';
+  cans.textBaseline = 'middle';
   //在画布上绘制填色的文本（输出的文本，开始绘制文本的X坐标位置，开始绘制文本的Y坐标位置）
   cans.fillText(str, can.width / 8, can.height / 2);
   const div = document.createElement('div');
@@ -67,10 +67,10 @@ function setWatermark(id, str) {
 
 const watermark = {
   show: function () {
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(WATER_MARK_DOM_ID).style.display = 'block';
   },
   hide: function () {
-    document.getElementById(id).style.display = 'hide';
+    document.getElementById(WATER_MARK_DOM_ID).style.display = 'hide';
   },
   // 该方法只允许调用一次
   set: function (id, str) {
@@ -93,7 +93,7 @@ const watermark = {
   },
   // 清空水印
   clear: function () {
-    document.getElementById(WATER_MARK_DOM_ID)?.remove();
+    document.getElementById(WATER_MARK_DOM_ID).remove();
     window.removeEventListener('resize', setWatermark);
     if (smartAdminWaterMarkIntervalId) {
       clearInterval(smartAdminWaterMarkIntervalId);

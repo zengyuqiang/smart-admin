@@ -5,7 +5,7 @@
   * @Date:      2022-08-21 19:52:43 
   * @Wechat:    zhuda1024 
   * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022 
+  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
 -->
 <template>
   <a-modal title="选择部门" v-model:visible="visibleFlag" :maskClosable="false" :width="768" @ok="onSubmit" @cancel="onClose">

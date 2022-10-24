@@ -5,7 +5,7 @@
   * @Date:      2022-08-19 23:09:02 
   * @Wechat:    zhuda1024 
   * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022 
+  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
 -->
 <template>
   <a-modal v-model:visible="visible" :width="900" title="选择人员" @cancel="closeModal" @ok="onSelectEmployee">

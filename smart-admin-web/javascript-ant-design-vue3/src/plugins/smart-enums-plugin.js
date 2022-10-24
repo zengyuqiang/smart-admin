@@ -6,7 +6,7 @@
  * @Date:      2022-09-06 20:51:03
  * @Wechat:    zhuda1024
  * @Email:     lab1024@163.com
- * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022
+ * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012
  */
 import _ from 'lodash';
 import { FLAG_NUMBER_ENUM } from '/@/constants/common-const';

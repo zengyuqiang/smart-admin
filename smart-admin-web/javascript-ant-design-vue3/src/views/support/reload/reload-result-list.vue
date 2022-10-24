@@ -5,7 +5,7 @@
   * @Date:      2022-07-21 21:55:12
   * @Wechat:    zhuda1024 
   * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），2012-2022 
+  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
 -->
 <template>
   <a-modal :visible="visible" title="reload结果列表" width="60%" :footer="null" @cancel="onClose">
