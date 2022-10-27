@@ -4,8 +4,8 @@ SmartAdmin由河南·洛阳 [1024创新实验室](https://www.1024lab.net/)团�
 
 #### 开源地址   (*欢迎 Star！*)
 
-在线预览：<a href="http://preview.smartadmin.1024lab.net" target="_blank">http://preview.smartadmin.1024lab.net</a> 
-部署文档：<a href="http://smartadmin.1024lab.net" target="_blank">http://smartadmin.1024lab.net</a>
+在线预览： [http://preview.smartadmin.1024lab.net](http://preview.smartadmin.1024lab.net)  
+部署文档：[http://smartadmin.1024lab.net](http://smartadmin.1024lab.net)  
 
 
 #### 疑惑
