@@ -1,4 +1,4 @@
-### SmartAdmin 2.0 (即 vue3 的 js版本和ts版本 )已经更新了最新代码，请看smart_admin_v2目录，当前正在完善文档，欢迎持续关注 ！
+### SmartAdmin 2.0 (即 vue3 的 js版本和ts版本 )已经更新了最新代码，当前正在完善文档，欢迎持续关注 ！
 #### 简介
 SmartAdmin由河南·洛阳 [1024创新实验室](https://www.1024lab.net/)团队研发的一套互联网企业级的通用型中后台解决方案！使用最前沿的前后台技术栈SpringBoot和Vue，前后端分离，<font color="#DC143C">**我们开源一套漂亮的代码和一套整洁的代码规范**</font>，让大家在这浮躁的代码世界里感受到一股把代码写好的清流！同时又让开发者节省大量的时间，减少加班，快乐工作，热爱生活。SmartAdmin 让你从认识到忘不了，绝对是你最想要的！
 
@@ -6,7 +6,7 @@ SmartAdmin由河南·洛阳 [1024创新实验室](https://www.1024lab.net/)团�
 
 在线预览： [http://preview.smartadmin.1024lab.net](http://preview.smartadmin.1024lab.net)  
 部署文档：[http://smartadmin.1024lab.net](http://smartadmin.1024lab.net)  
-
+vue2版本：请查看 feature/1.x 分支
 
 #### 疑惑
 有人问：又是个“轮子”？ 轮子靠谱吗？为什么要选择你这个轮子？
@@ -25,32 +25,32 @@ SmartAdmin由河南·洛阳 [1024创新实验室](https://www.1024lab.net/)团�
 #### 演示图
 <table>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180453_252f5e9f_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180630_ee5b4f46_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/1-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/1-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180737_9363e283_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180802_aefb78f4_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/2-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/2-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180821_30fc7aaf_5469596.png")"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180844_01ebd7d2_5469596.png")"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/3-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/3-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180902_02c8d838_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180918_ff1f7ff5_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/4-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/4-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180938_86b39645_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/180956_69e25a9c_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/5-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/5-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/181013_791d92f0_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/181032_9f0dbbee_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/6-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/6-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/181049_099d0169_5469596.png"/></td>
-  <td><img src="https://images.gitee.com/uploads/images/2020/1208/181104_914c457a_5469596.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/7-1.png"/></td>
+  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/7-2.png"/></td>
 </tr>
 </table>
 
@@ -136,4 +136,4 @@ SmartAdmin微信群（**加我微信拉你入群！**）
 
 ---
 作者简介:
-[卓大](https://zhuoluodada.cn)， 1024创新实验室主任，混迹于各个技术圈，研究过计算机，熟悉点java，略懂点前端。
+[卓大](https://zhuoda.vip)， 1024创新实验室主任，混迹于各个技术圈，研究过计算机，熟悉点java，略懂点前端。
