@@ -25,7 +25,7 @@ vue2版本：请查看 feature/1.x 分支
 #### 演示图
 <table>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/1-1.png"/></td>
+  <td><img src="![输入图片说明](%E6%88%AA%E5%9B%BE/1-1.png)"/></td>
   <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/1-2.png"/></td>
 </tr>
 <tr>
