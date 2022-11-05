@@ -48,10 +48,7 @@ vue2版本：请查看 feature/1.x 分支
   <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/6-1.png"/></td>
   <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/6-2.png"/></td>
 </tr>
-<tr>
-  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/7-1.png"/></td>
-  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/7-2.png"/></td>
-</tr>
+
 </table>
 
 
