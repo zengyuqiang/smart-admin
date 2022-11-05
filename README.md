@@ -19,7 +19,7 @@ vue2版本：请查看 feature/1.x 分支
 - **我们主动思考，保持谦逊，保持学习，热爱代码，更热爱生活。**
 - <font color="#DC143C">**我们希望你，希望你能花费3分钟认真阅读下面的每一个点，让你感受从未有过的技术体验！**</font>
 
-#### 演示图
+### 演示图
 <table>
 <tr>
   <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/1-1.png"/></td>
