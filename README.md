@@ -26,31 +26,31 @@ vue2版本：请查看 feature/1.x 分支
 <table>
 <tr>
   <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/1-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/1-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/1-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/2-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/2-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/2-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/2-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/3-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/3-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/3-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/3-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/4-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/4-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/4-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/4-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/5-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/5-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/5-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/5-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/6-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/6-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/6-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/6-2.png"/></td>
 </tr>
 <tr>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/7-1.png"/></td>
-  <td><img src="http://img.zhuoluodada.cn/smart-admin-v2/cut/7-2.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/7-1.png"/></td>
+  <td><img src="https://gitee.com/lab1024/smart-admin/raw/master/%E6%88%AA%E5%9B%BE/7-2.png"/></td>
 </tr>
 </table>
 
