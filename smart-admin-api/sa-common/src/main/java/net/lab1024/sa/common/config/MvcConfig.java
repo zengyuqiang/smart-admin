@@ -3,6 +3,7 @@ package net.lab1024.sa.common.config;
 import net.lab1024.sa.common.common.interceptor.AbstractInterceptor;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -27,6 +28,9 @@ public class MvcConfig implements WebMvcConfigurer {
     @Autowired(required = false)
     private List<HandlerInterceptor> interceptorList;
 
+    @Value("${file.storage.local.path}")
+    private String uploadPath;
+
     @Override
     public void addInterceptors (InterceptorRegistry registry) {
         if (CollectionUtils.isEmpty(interceptorList)) {
@@ -39,7 +43,8 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/preview/**");
+        registry.addResourceHandler("/preview/**")
+                .addResourceLocations("classpath:/META-INF/resources/","classpath:/resources/","classpath:/static/","file:" + uploadPath);;
     }
 
     @Override
