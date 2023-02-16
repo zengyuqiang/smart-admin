@@ -1,6 +1,4 @@
-### SmartAdmin
-
-SmartAdmin 由河南·洛阳 [1024 创新实验室](https://www.1024lab.net/)使用SpringBoot2 和 Vue3 Setup语法糖、 Composition Api (同时支持JavaScript和TypeScript双版本) ，开发出的一套简洁、易用的中后台解决方案！  
+**SmartAdmin** 由**河南·洛阳 [1024 创新实验室](https://www.1024lab.net/)**使用SpringBoot2 和 Vue3 Setup语法糖、 Composition Api (同时支持JavaScript和TypeScript双版本) ，开发出的一套简洁、易用的低代码中后台解决方案！  
 
 **我们开源一套漂亮的代码和一套整洁的代码规范**，让大家在这浮躁的代码世界里感受到一股把代码写好的清流！同时又让开发者节省大量的时间，减少加班，快乐工作，保持谦逊，保持学习，热爱代码，更热爱生活！
 
@@ -53,13 +51,15 @@ vue2版本：请查看 feature/1.x 分支
 - 系统：员工、部门、角色、权限、菜单 等
 - 工具：文件管理、系统参数、数据字典、单号生成 等
 - 代码生成： 基于每个表的配置、在线预览代码、下载 等
+- 更多请查看：[SmartAdmin 业内独有功能亮点](https://smartadmin.vip/views/v2/base/FunctionFeature.html)
 
 ### 前端特点
 
 - 提供 js 和 ts 双版本，目录结构及其清晰
 - setup语法糖下Composition Api 代码规范可能只有我们写对了
 - 前端常量维护: vue-enum，拒绝出现魔法数字，常量枚举不可维护的现象
-- 非常漂亮的首页、业务独有的帮助文档、数据变动记录、水印功能、表格自定义列等
+- 非常漂亮的首页、业内独有的帮助文档、数据变动记录、水印等
+- 业内独有的用户表格自定义列，且保存到数据库
 - 业内最好的api、常量、等写法
 - 独有的本地、开发、测试、预发布、生产 5个env环境配置文件
 - 业内代码最清晰的layout布局写法
@@ -71,13 +71,13 @@ vue2版本：请查看 feature/1.x 分支
 
 - 高质量的 Java 代码、分包结构、和代码注释
 - 业内独创的请求返回码维护，非常值得一看
-- 四层架构（controller, service, manager, dao）是什么，为什么要有四层
+- 四层架构（controller, service, manager, dao），为什么要有四层
 - vo, bo, form, entity ，各种 javabean 怎么区分和使用
 - 基于git diff的数据变更留痕功能，忘掉鸡肋的操作记录吧
 - 心跳服务，让你发现有哪些机器再跑，哪些人在偷偷的跑你的 Job
 - 支持接口加密解密注解、接口重复提交
 - maven多环境：开发、测试、预发布、生产 环境配置
-- smart-reload，为系统预留钩子，动态加载，在不重启程序前提下执行一些代码，你懂的
+- smart-reload，为系统预留钩子，动态加载，在不重启程序前提下执行一些代码
 - [以上举例，只是沧海一粟，更多的细节等待你的发现！](https://smartadmin.vip/views/v2/base/CodeFeature.html)
 
 
