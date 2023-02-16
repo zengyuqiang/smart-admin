@@ -1,13 +1,13 @@
 ### SmartAdmin
 
-SmartAdmin 由河南·洛阳 [1024 创新实验室](https://www.1024lab.net/)使用SpringBoot2 和 Vue3 Setup标签、 Composition Api (同时支持JavaScript和TypeScript双版本) ，开发出的一套简洁、易用的中后台解决方案！  
+SmartAdmin 由河南·洛阳 [1024 创新实验室](https://www.1024lab.net/)使用SpringBoot2 和 Vue3 Setup语法糖、 Composition Api (同时支持JavaScript和TypeScript双版本) ，开发出的一套简洁、易用的中后台解决方案！  
 
 **我们开源一套漂亮的代码和一套整洁的代码规范**，让大家在这浮躁的代码世界里感受到一股把代码写好的清流！同时又让开发者节省大量的时间，减少加班，快乐工作，保持谦逊，保持学习，热爱代码，更热爱生活！
 
 ### 地址
 
-在线预览： [http://preview.smartadmin.1024lab.net](http://preview.smartadmin.1024lab.net)  
-部署文档：[https://smartadmin.1024lab.net](https://smartadmin.1024lab.net)  （文档在努力更新中）  
+在线预览： [https://preview.smartadmin.vip](https://preview.smartadmin.vip)  
+部署文档：[https://smartadmin.vip](https://smartadmin.vip)
 vue2版本：请查看 feature/1.x 分支
 
 ### 理念与思想

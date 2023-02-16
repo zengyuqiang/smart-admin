@@ -32,7 +32,7 @@
             height="60"
             frameborder="0"
             allowtransparency="true"
-            src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=5&site=12"
+            src="//i.tianqi.com/index.php?c=code&id=12&icon=1&num=3&site=12"
           ></iframe>
         </div>
       </a-row>
@@ -136,7 +136,7 @@
     margin-bottom: 10px;
 
     .heart-sentence {
-      width: calc(100% - 660px);
+      width: calc(100% - 420px);
       h3 {
         color: rgba(0, 0, 0, 0.75);
       }
@@ -146,7 +146,7 @@
       display: flex;
       justify-content: space-between;
       .weather {
-        width: 650px;
+        width: 400px;
       }
     }
 
