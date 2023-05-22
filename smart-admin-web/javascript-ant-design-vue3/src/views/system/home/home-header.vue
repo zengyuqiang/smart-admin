@@ -57,7 +57,7 @@
     if (now > 5 && now <= 13) {
       sentence = 'おはようございます！';
     } else if (now > 13 && now <= 17) {
-      sentence = 'こんにちは';
+      sentence = 'こんにちは！';
     } else {
       sentence = 'こんばんは！';
     }
