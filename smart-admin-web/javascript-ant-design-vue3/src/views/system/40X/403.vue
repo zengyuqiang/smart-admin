@@ -10,7 +10,7 @@
 <template>
   <a-result status="404" title="对不起，您没有权限访问此内容">
     <template #extra>
-      <a-button type="primary" @click="goHome">返回首页</a-button>
+      <a-button type="primary" @click="goHome">返回ホームページ</a-button>
     </template>
   </a-result>
 </template>

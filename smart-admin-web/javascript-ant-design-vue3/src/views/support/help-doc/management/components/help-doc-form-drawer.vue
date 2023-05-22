@@ -29,10 +29,10 @@
       <a-form-item label="排序" name="sort">
         <a-input-number v-model:value="formData.sort" placeholder="值越小越靠前" />（值越小越靠前）
       </a-form-item>
-      <a-form-item label="是否首页显示">
+      <a-form-item label="是否ホームページ显示">
         <a-radio-group v-model:value="relateHomeFlag" button-style="solid">
-          <a-radio-button :value="true">首页显示</a-radio-button>
-          <a-radio-button :value="false">首页不用显示</a-radio-button>
+          <a-radio-button :value="true">ホームページ显示</a-radio-button>
+          <a-radio-button :value="false">ホームページ不用显示</a-radio-button>
         </a-radio-group>
       </a-form-item>
       <a-form-item label="关联菜单" v-if="!relateHomeFlag">
@@ -177,7 +177,7 @@
       if (relateHomeFlag.value) {
         param.relationList = [
           {
-            relationName: '首页',
+            relationName: 'ホームページ',
             relationId: 0,
           },
         ];

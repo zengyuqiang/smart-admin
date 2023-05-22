@@ -1,5 +1,5 @@
 /*
- * 首页路由
+ * ホームページ路由
  *
  * @Author:    1024创新实验室-主任：卓大
  * @Date:      2022-09-06 20:51:41
@@ -18,7 +18,7 @@ export const homeRouters = [
     redirect: { name: HOME_PAGE_NAME },
     component: SmartLayout,
     meta: {
-      title: '首页',
+      title: 'ホームページ',
       menuType: MENU_TYPE_ENUM.CATALOG.value,
       icon: 'HomeOutlined',
     },
@@ -27,10 +27,10 @@ export const homeRouters = [
         path: '/home',
         name: HOME_PAGE_NAME,
         meta: {
-          title: '首页',
+          title: 'ホームページ',
           menuType: MENU_TYPE_ENUM.MENU.value,
           icon: 'HomeOutlined',
-          parentMenuList: [{ name: '_home', title: '首页' }],
+          parentMenuList: [{ name: '_home', title: 'ホームページ' }],
         },
         component: () => import('/@/views/system/home/index.vue'),
       },

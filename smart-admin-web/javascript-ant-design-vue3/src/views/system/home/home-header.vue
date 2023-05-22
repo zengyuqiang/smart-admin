@@ -54,16 +54,12 @@
   const welcomeSentence = computed(() => {
     let sentence = '';
     let now = new Date().getHours();
-    if (now > 0 && now <= 6) {
-      sentence = '午夜好，';
-    } else if (now > 6 && now <= 11) {
-      sentence = '早上好，';
-    } else if (now > 11 && now <= 14) {
-      sentence = '中午好，';
-    } else if (now > 14 && now <= 18) {
-      sentence = '下午好，';
+    if (now > 5 && now <= 13) {
+      sentence = 'おはようございます！';
+    } else if (now > 13 && now <= 17) {
+      sentence = 'こんにちは';
     } else {
-      sentence = '晚上好，';
+      sentence = 'こんばんは！';
     }
     return sentence + userStore.$state.actualName;
   });
@@ -72,14 +68,14 @@
   const lastLoginInfo = computed(() => {
     let info = '';
     if (userStore.$state.lastLoginTime) {
-      info = info + '上次登录:' + userStore.$state.lastLoginTime;
+      info = info + '前回登録時間：' + userStore.$state.lastLoginTime;
     }
     if (userStore.$state.lastLoginIp) {
-      info = info + '; IP:' + userStore.$state.lastLoginIp;
+      info = info + '; IPアドレス：' + userStore.$state.lastLoginIp;
     }
     if (userStore.$state.lastLoginUserAgent) {
       let ua = uaparser(userStore.$state.lastLoginUserAgent);
-      info = info + '; 设备:';
+      info = info + '; 設備又はブラウザ：';
       if (ua.browser.name) {
         info = info + ' ' + ua.browser.name;
       }
@@ -94,22 +90,39 @@
     return info;
   });
 
-  //日期、节日、节气
+  //日期
   const dayInfo = computed(() => {
+    
     //阳历
     let solar = Solar.fromDate(new Date());
     let day = solar.toString();
     let week = solar.getWeekInChinese();
-    //阴历
-    let lunar = Lunar.fromDate(new Date());
-    let lunarMonth = lunar.getMonthInChinese();
-    let lunarDay = lunar.getDayInChinese();
-    //节气
-    let jieqi = lunar.getPrevJieQi().getName();
-    let next = lunar.getNextJieQi();
-    let nextJieqi = next.getName() + ' ' + next.getSolar().toYmd();
-
-    return `${day} 星期${week}，农历${lunarMonth}${lunarDay}（当前${jieqi}，${nextJieqi} ）`;
+        switch (week) {
+          case '一':
+            week = '月';
+            break;
+          case '二':
+            week = '火';
+            break;
+          case '三':
+            week = '水';
+            break;
+          case '四':
+            week = '木';
+            break;
+          case '五':
+            week = '金';
+            break;
+          case '六':
+            week = '土';
+            break;
+          case '天':
+            week = '日';
+            break;
+          default:
+            week = "xxx";
+      }
+    return `${day} ${week}曜日`;
   });
 
   // 毒鸡汤

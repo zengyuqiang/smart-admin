@@ -64,6 +64,10 @@
         } catch (error) {
           smartSentry.captureError(error);
         } finally {
+          // 清空表单
+          form.oldPassword = '',
+          form.newPassword = '',
+          form.confirmPwd = ''
           SmartLoading.hide();
         }
       })

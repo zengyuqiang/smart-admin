@@ -11,7 +11,7 @@
   <div class="help-doc-wrapper">
     <!-----头部---->
     <div class="help-doc-header">
-      <strong>帮助文档</strong>
+      <strong>ヘルプドキュメント</strong>
       <strong class="help-doc-close" @click="hideHelpDoc"><close-outlined /></strong>
     </div>
 
