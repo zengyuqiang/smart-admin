@@ -22,7 +22,7 @@
       <div>
         <a-spin :spinning="loading">
           <a-tabs class="dropdown-tabs" centered :tabBarStyle="{ textAlign: 'center' }" style="width: 300px">
-            <a-tab-pane tab="通知" key="1">
+            <a-tab-pane tab="お知らせ" key="1">
               <a-list class="tab-pane" size="small">
                 <a-list-item>
                   <a-list-item-meta description="7天前">

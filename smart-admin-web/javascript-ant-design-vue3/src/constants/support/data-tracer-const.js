@@ -16,7 +16,7 @@ export const DATA_TRACER_TYPE_ENUM = {
   },
   OA_NOTICE: {
     value: 2,
-    desc: 'OA-通知公告',
+    desc: 'OA-通知お知らせ',
   },
   OA_ENTERPRISE: {
     value: 3,

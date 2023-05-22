@@ -171,6 +171,7 @@
     {
       title: '操作',
       dataIndex: 'operate',
+      fixed: 'right',
       width: 120,
     },
   ]);

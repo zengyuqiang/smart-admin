@@ -22,7 +22,7 @@ export const NOTICE_VISIBLE_RANGE_DATA_TYPE_ENUM = {
 export const NOTICE_TYPE_ENUM = {
   ANNOUNCEMENT: {
     value: 1,
-    desc: '公告',
+    desc: 'お知らせ',
   },
   NOTICE: {
     value: 2,

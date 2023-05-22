@@ -25,5 +25,5 @@ export const appDefaultConfig = {
   // 帮助文档
   helpDocFlag: true,
   // 网站名称
-  websiteName: 'SmartAdminX',
+  websiteName: 'SmartAdmin',
 };

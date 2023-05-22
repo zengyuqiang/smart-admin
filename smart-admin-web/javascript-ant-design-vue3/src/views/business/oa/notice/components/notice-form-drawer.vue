@@ -17,8 +17,8 @@
     :destroyOnClose="true"
   >
     <a-form ref="formRef" :model="formData" :rules="formRules" :label-col="{ span: 3 }" :wrapper-col="{ span: 20 }">
-      <a-form-item label="公告标题" name="title">
-        <a-input v-model:value="formData.title" placeholder="请输入公告标题" />
+      <a-form-item label="お知らせ标题" name="title">
+        <a-input v-model:value="formData.title" placeholder="请输入お知らせ标题" />
       </a-form-item>
       <a-form-item label="分类" name="noticeTypeId">
         <a-select v-model:value="formData.noticeTypeId" style="width: 100%" :showSearch="true" :allowClear="true">
@@ -72,7 +72,7 @@
           @change="changeTime"
         />
       </a-form-item>
-      <a-form-item label="公告内容" name="contentHtml">
+      <a-form-item label="お知らせ内容" name="contentHtml">
         <SmartWangeditor ref="contentRef" :modelValue="formData.contentHtml" :height="300" />
       </a-form-item>
       <a-form-item label="附件">

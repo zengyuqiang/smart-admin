@@ -12,7 +12,7 @@
     <!-- 顶部logo区域 -->
     <div class="logo" @click="onGoHome">
       <img class="logo-img" :src="logoImg" />
-      <div class="title">SmartAdminX</div>
+      <div class="title">SmartAdmin</div>
     </div>
     <!-- 一级菜单展示 -->
     <a-menu :selectedKeys="selectedKeys" mode="inline" :theme="theme">

@@ -19,13 +19,13 @@
     <template #overlay>
       <a-menu :class="['avatar-menu']">
         <a-menu-item @click="onRefresh">
-          <span>刷新权限</span>
+          <span>権限更新</span>
         </a-menu-item>
         <a-menu-item @click="showUpdatePwdModal">
-          <span>修改密码</span>
+          <span>パスワード変更</span>
         </a-menu-item>
         <a-menu-item @click="onLogout">
-          <span>退出登录</span>
+          <span>ログアウト</span>
         </a-menu-item>
       </a-menu>
     </template>

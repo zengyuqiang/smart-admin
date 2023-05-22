@@ -9,7 +9,7 @@
   *
 -->
 <template>
-  <default-home-card extra="更多" icon="SoundTwoTone" title="通知公告" @extraClick="onMore">
+  <default-home-card extra="更多" icon="SoundTwoTone" title="お知らせ" @extraClick="onMore">
     <a-spin :spinning="loading">
     <div class="content-wrapper">
       <a-empty v-if="$lodash.isEmpty(data)" />

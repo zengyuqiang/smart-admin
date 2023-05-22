@@ -15,7 +15,7 @@ export const FILE_FOLDER_TYPE_ENUM = {
   },
   NOTICE: {
     value: 2,
-    desc: '公告',
+    desc: 'お知らせ',
   },
   HELP_DOC: {
     value: 3,

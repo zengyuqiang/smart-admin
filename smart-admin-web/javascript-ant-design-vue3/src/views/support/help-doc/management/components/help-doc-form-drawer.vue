@@ -38,7 +38,7 @@
       <a-form-item label="关联菜单" v-if="!relateHomeFlag">
         <MenuTreeSelect v-model:value="formData.relationIdList" ref="menuTreeSelect" />
       </a-form-item>
-      <a-form-item label="公告内容" name="contentHtml">
+      <a-form-item label="お知らせ内容" name="contentHtml">
         <Wangeditor ref="contentRef" :modelValue="formData.contentHtml" :height="300" />
       </a-form-item>
       <a-form-item label="附件">
