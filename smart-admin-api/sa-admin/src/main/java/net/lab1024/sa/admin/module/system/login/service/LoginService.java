@@ -93,7 +93,7 @@ public class LoginService {
     public ResponseDTO<LoginEmployeeDetail> login(LoginForm loginForm, String ip, String userAgent) {
         LoginDeviceEnum loginDeviceEnum = SmartEnumUtil.getEnumByValue(loginForm.getLoginDevice(), LoginDeviceEnum.class);
         if (loginDeviceEnum == null) {
-            return ResponseDTO.userErrorParam("登录设备暂不支持！");
+            return ResponseDTO.userErrorParam("デバイスへのログインは現在サポートされていません！");
         }
         // 校验 图形验证码
         ResponseDTO<String> checkCaptcha = captchaService.checkCaptcha(loginForm);
@@ -106,12 +106,12 @@ public class LoginService {
          */
         EmployeeEntity employeeEntity = employeeService.getByLoginName(loginForm.getLoginName());
         if (null == employeeEntity) {
-            return ResponseDTO.userErrorParam("登录名不存在！");
+            return ResponseDTO.userErrorParam("ユーザーIDは存在ません！");
         }
 
         if (employeeEntity.getDisabledFlag()) {
-            saveLoginLog(employeeEntity, ip, userAgent, "账号已禁用", LoginLogResultEnum.LOGIN_FAIL);
-            return ResponseDTO.userErrorParam("您的账号已被禁用,请联系工作人员！");
+            saveLoginLog(employeeEntity, ip, userAgent, "アカウントが無効になっています", LoginLogResultEnum.LOGIN_FAIL);
+            return ResponseDTO.userErrorParam("アカウントが無効になっています,管理員に問い合わせください！");
         }
         /**
          * 验证密码：
@@ -121,8 +121,8 @@ public class LoginService {
         String superPassword = EmployeeService.getEncryptPwd(configService.getConfigValue(ConfigKeyEnum.SUPER_PASSWORD));
         String requestPassword = EmployeeService.getEncryptPwd(loginForm.getPassword());
         if (!(superPassword.equals(requestPassword) || employeeEntity.getLoginPwd().equals(requestPassword))) {
-            saveLoginLog(employeeEntity, ip, userAgent, "密码错误", LoginLogResultEnum.LOGIN_FAIL);
-            return ResponseDTO.userErrorParam("登录名或密码错误！");
+            saveLoginLog(employeeEntity, ip, userAgent, "間違ったパスワード！", LoginLogResultEnum.LOGIN_FAIL);
+            return ResponseDTO.userErrorParam("ユーザーID又は間違ったパスワード！");
         }
 
         // 生成 登录token，保存token
@@ -137,7 +137,7 @@ public class LoginService {
         loginUserDetailCache.put(employeeEntity.getEmployeeId(), loginEmployeeDetail);
 
         //保存登录记录
-        saveLoginLog(employeeEntity, ip, userAgent, superPasswordFlag ? "万能密码登录" : loginDeviceEnum.getDesc(), LoginLogResultEnum.LOGIN_SUCCESS);
+        saveLoginLog(employeeEntity, ip, userAgent, superPasswordFlag ? "万能パスワードログイン" : loginDeviceEnum.getDesc(), LoginLogResultEnum.LOGIN_SUCCESS);
 
         return ResponseDTO.ok(loginEmployeeDetail);
     }

@@ -110,8 +110,10 @@ public class NoticeEmployeeService {
         long viewCount = noticeDao.viewRecordCount(noticeId, requestEmployeeId);
         if (viewCount == 0) {
             noticeDao.insertViewRecord(noticeId, requestEmployeeId, ip, userAgent, 1);
+            noticeDao.insertViewRecordFromNotice(noticeId, 1, 1);
         } else {
             noticeDao.updateViewRecord(noticeId, requestEmployeeId, ip, userAgent);
+            noticeDao.updateViewRecordFromNotice(noticeId);
         }
 
         return ResponseDTO.ok(noticeDetailVO);

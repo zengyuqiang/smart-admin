@@ -32,7 +32,7 @@
     <div class="feedback">
       <div>反馈让您不满意的点，我们争取做到更好<smile-outlined style="margin-left: 5px" /></div>
       <div class="feedback-message-list">
-        <div v-for="item in feedbackMessageList" :key="item.feedbackId" class="feedback-message">{{ item.feedbackContent }}</div>
+        <div v-for="item in feedbackMessageList" :key="item.feedbackId" class="feedback-message">{{ item.feedbackId + '.' + item.feedbackContent}}</div>
       </div>
       <a @click="feedbackModal.show">我也要反馈</a>
     </div>
@@ -201,7 +201,7 @@
     .feedback {
       .feedback-message-list {
         margin: 6px 0px;
-        height: 40px;
+        height: 150px;
         position: relative;
         overflow: hidden;
         .feedback-message {

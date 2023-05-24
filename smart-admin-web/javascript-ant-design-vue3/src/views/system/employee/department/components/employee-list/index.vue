@@ -179,7 +179,7 @@
 
   let defaultParams = {
     departmentId: undefined,
-    disabledFlag: false,
+    disabledFlag: undefined,
     keyword: undefined,
     searchCount: undefined,
     pageNum: 1,

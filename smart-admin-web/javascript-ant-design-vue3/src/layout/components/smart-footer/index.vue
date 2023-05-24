@@ -9,9 +9,7 @@
 -->
 <template>
   <div class="version" >
-    <a target="_blank" href="https://www.1024lab.net">
-      Since 2021-{{ currentYear }}
-    </a>
+      Since 2023-{{ currentYear }}
   </div>
 </template>
 <script setup>

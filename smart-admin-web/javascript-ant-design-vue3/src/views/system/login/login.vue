@@ -49,6 +49,10 @@
         <a-form-item>
           <div class="btn" @click="onLogin">ログイン</div>
         </a-form-item>
+        <!-- 未开发 -->
+        <!-- <a-form-item>
+          <div class="btn" @click="showDrawer">新規登録</div>
+        </a-form-item> -->
       </a-form>
       <div class="more">
         <div class="title-box">
