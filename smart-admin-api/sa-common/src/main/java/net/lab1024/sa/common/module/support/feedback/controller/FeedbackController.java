@@ -11,9 +11,9 @@ import net.lab1024.sa.common.common.util.SmartRequestUtil;
 import net.lab1024.sa.common.constant.SwaggerTagConst;
 import net.lab1024.sa.common.module.support.feedback.domain.FeedbackAddForm;
 import net.lab1024.sa.common.module.support.feedback.domain.FeedbackQueryForm;
+import net.lab1024.sa.common.module.support.feedback.domain.FeedbackUpdateForm;
 import net.lab1024.sa.common.module.support.feedback.domain.FeedbackVO;
 import net.lab1024.sa.common.module.support.feedback.service.FeedbackService;
-import net.lab1024.sa.common.module.support.repeatsubmit.annoation.RepeatSubmit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -49,5 +49,17 @@ public class FeedbackController extends SupportBaseController {
     public ResponseDTO<String> add(@RequestBody @Valid FeedbackAddForm addForm) {
         RequestUser employee = SmartRequestUtil.getRequestUser();
         return feedbackService.add(addForm, employee);
+    }
+
+    /**
+     * 反馈是否已经解决的更新方法
+     *
+     * @param feedbackUpdateForm 反馈数据的ID 和更新Flag
+     * @return 成功与否
+     */
+    @ApiOperation("意见反馈-反馈是否已经解决 @author 曾玉强")
+    @PostMapping("/feedback/update")
+    public ResponseDTO<String> update(@RequestBody FeedbackUpdateForm feedbackUpdateForm) {
+        return feedbackService.update(feedbackUpdateForm);
     }
 }

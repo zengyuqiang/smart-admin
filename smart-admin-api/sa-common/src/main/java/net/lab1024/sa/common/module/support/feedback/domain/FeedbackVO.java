@@ -34,6 +34,9 @@ public class FeedbackVO {
     @JsonDeserialize(using = FileKeyVoDeserializer.class)
     private String feedbackAttachment;
 
+    @ApiModelProperty(value = "反馈是否已经解决")
+    private Boolean solveFlag;
+
     @ApiModelProperty(value = "创建人id")
     private Long userId;
 

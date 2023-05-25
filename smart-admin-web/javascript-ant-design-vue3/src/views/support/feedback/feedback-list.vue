@@ -50,6 +50,11 @@
         <template v-if="column.dataIndex === 'userType'">
           <span>{{ $smartEnumPlugin.getDescByValue('USER_TYPE_ENUM', text) }}</span>
         </template>
+        <template v-else-if="column.dataIndex === 'solveFlag'">
+          <a-tag v-show="text" color="success">已解决</a-tag>
+          <a-tag v-show="!text" color="error">未解决</a-tag>
+          <a-button type="primary" @click="feedbackUpdate(record.feedbackId)" :disabled="record.solveFlag">反馈更新</a-button>
+        </template>
       </template>
     </a-table>
 
@@ -72,12 +77,14 @@
 </template>
 
 <script setup>
+  import { message, Modal } from 'ant-design-vue';
   import { onMounted, reactive, ref } from 'vue';
   import { PAGE_SIZE, PAGE_SIZE_OPTIONS } from '/@/constants/common-const';
   import { defaultTimeRanges } from '/@/lib/default-time-ranges';
   import { feedbackApi } from '/@/api/support/feedback/feedback-api';
   import FilePreview from '/@/components/support/file-preview/index.vue';
   import { smartSentry } from '/@/lib/smart-sentry';
+import { Alert } from 'ant-design-vue';
 
   // ----------------------- 表格列 --------------------------------------
   const tableColumns = reactive([
@@ -93,6 +100,10 @@
     {
       title: '反馈图片',
       dataIndex: 'feedbackAttachment',
+    },
+    {
+      title: '反馈是否已经解决',
+      dataIndex: 'solveFlag',
     },
     {
       title: '反馈人',
@@ -162,5 +173,23 @@
     queryList();
   }
 
+  // 点击更新反馈
+  async function feedbackUpdate(feedbackId) {
+    try {
+      let param = {
+        feedbackId: feedbackId,
+        solveFlag: true
+        };
+      console.log(feedbackId)
+      tableLoading.value = true;
+      const result = await feedbackApi.feedbackUpdate(param);
+      message.success('更新成功');
+      queryList();
+    }catch (e) {
+      smartSentry.captureError(e);
+    }finally {
+      tableLoading.value = false;
+    }
+  }
   // ----------------------- 分页方法 ------------------------------------
 </script>

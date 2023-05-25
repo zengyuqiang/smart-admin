@@ -7,10 +7,7 @@ import net.lab1024.sa.common.common.domain.ResponseDTO;
 import net.lab1024.sa.common.common.util.SmartBeanUtil;
 import net.lab1024.sa.common.common.util.SmartPageUtil;
 import net.lab1024.sa.common.module.support.feedback.dao.FeedbackDao;
-import net.lab1024.sa.common.module.support.feedback.domain.FeedbackAddForm;
-import net.lab1024.sa.common.module.support.feedback.domain.FeedbackEntity;
-import net.lab1024.sa.common.module.support.feedback.domain.FeedbackQueryForm;
-import net.lab1024.sa.common.module.support.feedback.domain.FeedbackVO;
+import net.lab1024.sa.common.module.support.feedback.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -57,6 +54,16 @@ public class FeedbackService {
         feedback.setUserId(requestUser.getUserId());
         feedback.setUserName(requestUser.getUserName());
         feedbackDao.insert(feedback);
+        return ResponseDTO.ok();
+    }
+
+    /**
+     * 意见反馈更新
+     */
+    public ResponseDTO<String> update(FeedbackUpdateForm feedbackUpdateForm) {
+        FeedbackEntity feedback = SmartBeanUtil.copy(feedbackUpdateForm, FeedbackEntity.class);
+        feedback.setSolveFlag(feedback.getSolveFlag());
+        feedbackDao.updateById(feedback);
         return ResponseDTO.ok();
     }
 }

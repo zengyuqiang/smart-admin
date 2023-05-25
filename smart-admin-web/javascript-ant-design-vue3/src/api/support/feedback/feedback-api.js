@@ -18,4 +18,8 @@ export const feedbackApi = {
   queryFeedback: (params) => {
     return postRequest('/support/feedback/query', params);
   },
+  // 意见反馈更新
+  feedbackUpdate: (params) => {
+    return postRequest('/support/feedback/update', params);
+  },
 };

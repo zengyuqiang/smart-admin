@@ -36,6 +36,11 @@ public class FeedbackEntity {
     private String feedbackAttachment;
 
     /**
+     * 反馈是否已经解决
+     */
+    private Boolean solveFlag;
+
+    /**
      * 创建人id
      */
     private Long userId;
