@@ -1,11 +1,11 @@
 <!--
   *  员工 修改密码的 显示密码弹窗
   * 
-  * @Author:    1024创新实验室-主任：卓大 
+  * @Author: 曾 
   * @Date:      2022-08-08 20:46:18
-  * @Wechat:    zhuda1024 
-  * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
+  * @Wechat:   
+  * @Email: 739224682@qq.com 
+  * @Copyright:  
 -->
 <template>
   <a-modal v-model:visible="visible" :zIndex="9999" :width="500" title="提示" :closable="false" :maskClosable="false">

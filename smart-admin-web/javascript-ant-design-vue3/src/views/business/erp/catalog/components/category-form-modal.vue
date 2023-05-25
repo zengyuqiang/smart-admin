@@ -1,11 +1,11 @@
 <!--
   * 目录 表单 弹窗
   * 
-  * @Author:    1024创新实验室-主任：卓大 
+  * @Author: 曾 
   * @Date:      2022-08-21 19:52:43 
-  * @Wechat:    zhuda1024 
-  * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
+  * @Wechat:   
+  * @Email: 739224682@qq.com 
+  * @Copyright:  
 -->
 <template>
   <a-modal :visible="visible" :title="form.categoryId ? '编辑' : '添加'" ok-text="确认" cancel-text="取消" @ok="onSubmit" @cancel="onClose">

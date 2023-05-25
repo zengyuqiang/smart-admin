@@ -1,11 +1,11 @@
 <!--
   * 代码生成 配置信息
   * 
-  * @Author:    1024创新实验室-主任：卓大 
+  * @Author: 曾 
   * @Date:      2022-09-22 21:50:41 
-  * @Wechat:    zhuda1024 
-  * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
+  * @Wechat:   
+  * @Email: 739224682@qq.com 
+  * @Copyright:  
 -->
 <template>
   <a-alert :closable="true" message="默认数据库表名前缀为：t_， 如果想修改默认前缀，请修改前端 code-generator-table-config-form-basic.vue 文件的 tablePrefix 变量" type="success" show-icon>

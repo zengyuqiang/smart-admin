@@ -1,11 +1,11 @@
 /*
  *  keep-alive
  *
- * @Author:    1024创新实验室-主任：卓大
+ * @Author: 曾
  * @Date:      2022-09-06 20:39:54
- * @Wechat:    zhuda1024
- * @Email:     lab1024@163.com
- * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012
+ * @Wechat:  
+ * @Email: 739224682@qq.com
+ * @Copyright: 
  */
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';

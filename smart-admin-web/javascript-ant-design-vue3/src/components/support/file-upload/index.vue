@@ -3,9 +3,9 @@
   * 
   * @Author:    1024创新实验室：善逸
   * @Date:      2022-08-12 20:19:39 
-  * @Wechat:    zhuda1024 
-  * @Email:     lab1024@163.com 
-  * @Copyright  1024创新实验室 （ https://1024lab.net ），Since 2012 
+  * @Wechat:   
+  * @Email: 739224682@qq.com 
+  * @Copyright:  
   *
 -->
 <template>
