@@ -8,11 +8,11 @@ import java.time.LocalDateTime;
 /**
  * 帮助文档 - 浏览记录 VO
  *
- * @Author 1024创新实验室-主任: 卓大
- * @Date 2022-08-20 23:11:42
- * @Wechat zhuoda1024
- * @Email lab1024@163.com
- * @Copyright 1024创新实验室 （ https://1024lab.net ）
+ * @Author 曾
+ * @Date 2023-05-21 22:34:00 
+ * @Wechat 
+ * @Email 739224682@qq.com 
+ * @Copyright 
  */
 @Data
 public class HelpDocRecordVO {
