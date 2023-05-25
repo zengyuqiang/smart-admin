@@ -21,11 +21,6 @@
             永远年轻，永远前行 !<br />
         </p>
       </div>
-      <div class="app-qr-box">
-        <div class="app-qr">
-          <img :src="zhuoda" />
-        </div>
-      </div>
     </div>
     <div class="box-item login">
       <img class="login-qr" :src="loginQR" />
