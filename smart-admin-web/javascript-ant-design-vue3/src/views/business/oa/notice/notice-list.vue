@@ -102,7 +102,7 @@
         <template v-else-if="column.dataIndex === 'action'">
           <div class="smart-table-operate">
             <a-button type="link" @click="addOrUpdate(record.noticeId)" v-privilege="'notice:edit'">编辑</a-button>
-            <a-button type="link" @click="onDelete(record.noticeId)" v-privilege="'notice:delete'" danger>删除</a-button>
+            <a-button type="link" @click="onDelete(record.noticeId)" :disabled="record.deletedFlag" v-privilege="'notice:delete'" danger>删除</a-button>
           </div>
         </template>
       </template>
